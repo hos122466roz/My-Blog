@@ -13,15 +13,9 @@ const PostPage = () => {
         setPostInfo(postInfo);
       });
     });
-  }, []);
+  }, [id]);
   if (!postInfo) return "";
-  console.log(
-    "postInfo.id : " +
-      userInfo.id +
-      " ------------\n" +
-      "postInfo.author._id : " +
-      postInfo.author._id
-  );
+  
   return (
     <div className="post-page">
       <h1>{postInfo.title}</h1>

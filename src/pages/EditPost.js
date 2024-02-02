@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ReactQuill from "react-quill";
 import { Navigate, useParams } from "react-router-dom";
 import Editor from "../Editor";
 import axios from "axios";
