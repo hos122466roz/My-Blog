@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import Editor from "../Editor";
-import axios from "axios";
 const EditPost = () => {
   const { id } = useParams();
 
@@ -29,7 +28,7 @@ const EditPost = () => {
         setContent(post.content);
       });
     });
-  }, []);
+  }, [id]);
   const updatePost = async (ev) => {
     ev.preventDefault();
     const data = new FormData();

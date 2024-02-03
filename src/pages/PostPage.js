@@ -43,7 +43,7 @@ const PostPage = () => {
       )}
       <div className="author"> by @{postInfo.author.username}</div>
       <div className="image">
-        <img src={`http://localhost:4000/${postInfo.cover}`} />
+        <img src={`http://localhost:4000/${postInfo.cover}`} alt="description of image" />
       </div>
       <div dangerouslySetInnerHTML={{ __html: postInfo.content }} />
     </div>
